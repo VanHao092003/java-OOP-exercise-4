@@ -18,6 +18,7 @@ public class Main {
             List<Person> persons = new ArrayList<>();
             for (int j = 0; j < numberOfPersonInFamily; j++){
                 System.out.print("Enter name: ");
+                scanner.nextLine();
                 String name = scanner.nextLine();
                 System.out.print("Enter age: ");
                 String age = scanner.nextLine();
