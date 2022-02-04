@@ -24,7 +24,7 @@ public class Main {
                 String age = scanner.nextLine();
                 System.out.print("Enter job: ");
                 String job = scanner.nextLine();
-                System.out.println("Enter identity card number: ");
+                System.out.print("Enter identity card number: ");
                 String identityCardNumber = scanner.nextLine();
                 Person person = new Person(name, age, job, identityCardNumber);
                 persons.add(person);
