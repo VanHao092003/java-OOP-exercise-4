@@ -16,9 +16,9 @@ public class Main {
             int apartmentNumber = scanner.nextInt();
             System.out.println("----------------------------Person--------------------------- ");
             List<Person> persons = new ArrayList<>();
+            scanner.nextLine();
             for (int j = 0; j < numberOfPersonInFamily; j++){
                 System.out.print("Enter name: ");
-                scanner.nextLine();
                 String name = scanner.nextLine();
                 System.out.print("Enter age: ");
                 String age = scanner.nextLine();
@@ -28,11 +28,11 @@ public class Main {
                 String identityCardNumber = scanner.nextLine();
                 Person person = new Person(name, age, job, identityCardNumber);
                 persons.add(person);
-                person.toString();
+                System.out.println(person.toString());
             }
             Family family = new Family(numberOfPersonInFamily, apartmentNumber, persons);
             area.addFamily(family);
-            family.toString();
+            System.out.println(family.toString());
             
         }
         scanner.close();
