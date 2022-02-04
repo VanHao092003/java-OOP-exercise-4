@@ -30,6 +30,7 @@ public class Main {
                 persons.add(person);
                 System.out.println(person.toString());
             }
+            System.out.println("---------------information of family members-----------------");
             Family family = new Family(numberOfPersonInFamily, apartmentNumber, persons);
             area.addFamily(family);
             System.out.println(family.toString());
