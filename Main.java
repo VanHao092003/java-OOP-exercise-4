@@ -28,8 +28,12 @@ public class Main {
                 String identityCardNumber = scanner.nextLine();
                 Person person = new Person(name, age, job, identityCardNumber);
                 persons.add(person);
+                person.toString();
             }
-            area.addFamily(new Family(numberOfPersonInFamily, apartmentNumber, persons));
+            Family family = new Family(numberOfPersonInFamily, apartmentNumber, persons);
+            area.addFamily(family);
+            family.toString();
+            
         }
         scanner.close();
     }
