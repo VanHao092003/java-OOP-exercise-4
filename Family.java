@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Family {
-    protected int numberOfPersonInFamily;
-    protected int apartmentNumber;
-    protected List<Person> persons;
+    private int numberOfPersonInFamily;
+    private int apartmentNumber;
+    private List<Person> persons;
 
     public Family() {
         persons = new ArrayList<Person>();
